@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Celulares</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Menú -->
+    <header class="bg-blue-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-3xl font-bold">Distribuidora de Celulares</h1>
+
+            <nav>
+                <ul class="flex space-x-6 text-lg font-semibold">
+                    <li><a href="#" class="hover:text-yellow-300">Inicio</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Productos</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Ofertas</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título -->
+    <h2 class="text-3xl font-bold text-center text-blue-800 mt-8">
+        Catálogo de Celulares
+    </h2>
+
+    <!-- Tabla -->
+    <div class="overflow-x-auto mt-8 px-6">
+        <table class="w-full bg-white shadow-lg rounded-lg overflow-hidden">
+            <thead>
+                <tr class="bg-blue-700 text-white">
+                    <th class="p-4">Imagen</th>
+                    <th class="p-4">Modelo</th>
+                    <th class="p-4">Marca</th>
+                    <th class="p-4">Precio</th>
+                    <th class="p-4">Características</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="text-center hover:bg-gray-100">
+                    <td class="border p-3">
+                        <img src="/distribuidoraCelular/public/img/images.jpg" class="w-32 mx-auto rounded-lg">
+                    </td>
+                    <td class="border p-3">iPhone 16</td>
+                    <td class="border p-3">Apple</td>
+                    <td class="border p-3">$999</td>
+                    <td class="border p-3">128 GB, Cámara 48 MP, Pantalla OLED</td>
+                </tr>
+
+                <tr class="text-center hover:bg-gray-100">
+                    <td class="border p-3">
+                        <img src="/distribuidoraCelular/public/img/samsung.jpg" class="w-32 mx-auto rounded-lg">
+                    </td>
+                    <td class="border p-3">Galaxy S25</td>
+                    <td class="border p-3">Samsung</td>
+                    <td class="border p-3">$899</td>
+                    <td class="border p-3">256 GB, 12 GB RAM, AMOLED</td>
+                </tr>
+
+                <tr class="text-center hover:bg-gray-100">
+                    <td class="border p-3">
+                        <img src="/distribuidoraCelular/public/img/xiaomi.jpg" class="w-32 mx-auto rounded-lg">
+                    </td>
+                    <td class="border p-3">Xiaomi 15</td>
+                    <td class="border p-3">Xiaomi</td>
+                    <td class="border p-3">$699</td>
+                    <td class="border p-3">512 GB, Carga rápida 120W</td>
+                </tr>
+
+                <tr class="text-center hover:bg-gray-100">
+                    <td class="border p-3">
+                        <img src="/distribuidoraCelular/public/img/motorola.jpg" class="w-32 mx-auto rounded-lg">
+                    </td>
+                    <td class="border p-3">Motorola Edge 60</td>
+                    <td class="border p-3">Motorola</td>
+                    <td class="border p-3">$599</td>
+                    <td class="border p-3">256 GB, Cámara 50 MP</td>
+                </tr>
+
+                <tr class="text-center hover:bg-gray-100">
+                    <td class="border p-3">
+                        <img src="/distribuidoraCelular/public/img/pixel.jpg" class="w-32 mx-auto rounded-lg">
+                    </td>
+                    <td class="border p-3">Google Pixel 10</td>
+                    <td class="border p-3">Google</td>
+                    <td class="border p-3">$799</td>
+                    <td class="border p-3">256 GB, Android puro</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Formulario -->
+    <section class="max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 mt-10 mb-10">
+        <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">
+            Formulario de Compra
+        </h2>
+
+        <form>
+            <label class="block font-semibold mb-2">Nombre</label>
+            <input type="text" name="nombre"
+                class="w-full border border-gray-300 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+            <label class="block font-semibold mb-2">Celular</label>
+            <select name="celular"
+                class="w-full border border-gray-300 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option>iPhone 16</option>
+                <option>Samsung Galaxy S25</option>
+                <option>Xiaomi 15</option>
+                <option>Motorola Edge 60</option>
+                <option>Google Pixel 10</option>
+                <option>Otro</option>
+            </select>
+
+            <label class="block font-semibold mb-2">Cantidad</label>
+            <input type="number" min="1"
+                class="w-full border border-gray-300 rounded-lg p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+            <button type="submit"
+                class="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-900 transition">
+                Comprar
+            </button>                       
+        </form>
+    </section>
+
+</body>
+</html>
